@@ -1,0 +1,44 @@
+#parent{
+    margin: auto;
+    width: max-content;
+    display: inline-flex;
+    padding-left: 80pt;
+    padding-top: 80pt;
+}
+.colored-boxes {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+}
+#parent > div > #red {
+    background-color: red;
+    transition: transform 1s linear;
+    transform-origin: top left;
+}
+#parent:hover > div > #red {
+    transform: rotate(90deg);
+}
+#parent > div > #green {
+    background-color: green;
+    transition: transform 1s linear;
+    transform-origin: bottom right;
+}
+#parent:hover > div > #green{
+    transform: rotate(90deg);
+}
+#parent > div > #yellow {
+    background-color: yellow;
+    transition: transform 1s linear;
+    transform-origin: top right;
+}
+#parent:hover > div > #yellow {
+    transform: rotate(-90deg);
+}
+#parent > div > #blue{
+    background-color: blue;
+    transition: transform 1s linear;
+    transform-origin: bottom left;
+}
+#parent:hover > div > #blue{
+    transform: rotate(-90deg);
+}
